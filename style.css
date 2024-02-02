@@ -1,0 +1,37 @@
+.box {
+  display: flex;
+}
+
+body{
+  overflow-x: hidden;
+}
+.imagens {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  position: relative;
+  margin: 7px;
+  flex: 0.5;
+  transition: all 650ms ease-in;
+  color: white;
+}
+
+.imagens h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  opacity: 0;
+  margin: 0;
+}
+
+.imagens.activar {
+  flex: 5;
+}
+.imagens.activar h3 {
+  opacity: 1;
+  transition: opacity 0.3s ease-in 0.4s;
+}
