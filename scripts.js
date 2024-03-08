@@ -1,14 +1,14 @@
 const movimiento = document.querySelectorAll(".imagens");
 
-movimiento.forEach((panel) => {
-  panel.addEventListener("click", () => {
+movimiento.forEach((imgs) => {
+  imgs.addEventListener("click", () => {
     removeActiveClasses();
-    panel.classList.add("activar");
+    imgs.classList.add("activar");
   });
 });
 
 function removeActiveClasses() {
-  movimiento.forEach((panel) => {
-    panel.classList.remove("activar");
+  movimiento.forEach((imgs) => {
+    imgs.classList.remove("activar");
   });
 }
